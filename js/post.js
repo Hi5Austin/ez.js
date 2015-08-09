@@ -4,7 +4,7 @@
 //	"placeForms":function(){console.log("forms placed")}.
 //	"sendData":function(){console.log("data sent!")}
 //}
-var uploadLink = ""
+var uploadLink = "http://localhost:4567"
 
 function sendData(nameOfClass){
 	obj = new classes[nameOfClass]; 	// construct an empty object with the correct constructor
@@ -20,6 +20,8 @@ function sendData(nameOfClass){
 	for(var i = 0; i < length; i ++){  	// assign the input to the attributes of the object
 		obj[params[i]] = htmlContent[i];
 	}
+
+	obj.typeOf = nameOfClass;  // stick in the className to the object
 
 	var objString = JSON.stringify(obj); // create JSON string
 
