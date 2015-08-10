@@ -4,7 +4,7 @@
 //	"placeForms":function(){console.log("forms placed")}.
 //	"sendData":function(){console.log("data sent!")}
 //}
-var uploadLink = "http://localhost:4567"
+var uploadLink = ""
 
 function sendData(nameOfClass){
 	obj = new classes[nameOfClass]; 	// construct an empty object with the correct constructor
